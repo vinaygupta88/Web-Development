@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fourth page</title>
+</head>
+
+<body>
+    <h1>Form</h1>
+    <p>HTML forms are essential for collecting user input and sending it to a server for processing. They are created
+        using the form element, which acts as a container for various input elements like text fields, checkboxes, radio
+        buttons,and submit buttons.</p>
+    <ul>
+        <li>Form is define by using "form..../form" tag</li>
+        <li>The action attribute in an HTML form element specifies the URL where the form data should be sent when the
+            form is submitted.</li>
+        <li>It contain various tag like input, label, select and option etc.</li>
+    </ul>
+    <form action="post">
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="username"><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+        </div>
+        <div>
+            <p>Radio Button</p>
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+        </div>
+        <div>
+            <p>Check button</p>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1">I have a bike</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2">I have a car</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3">I have a boat</label>
+        </div>
+        <div>
+            <textarea name="comment" rows="4" cols="50"
+                id="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, sequi?</textarea>
+        </div>
+        <div>
+            <p>Select element</p>
+            <label for="cars">Choose a car:</label>
+            <select name="cars" id="cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </select>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+
+</html>
