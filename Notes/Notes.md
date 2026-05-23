@@ -1,5 +1,5 @@
 ## Day 1
-<h2>HTMl</h2>
+<h2>HTML</h2>
 HTMl- Hyper Text Markup Language, it is the code used to structure a web page and its content. <br>
 HTMl is Not case sensitive.
 The Component used to design the structure of web page are called HTMl Tags. Any web page is load on server by its name called index.html which is Homepage.
@@ -13,7 +13,7 @@ To comment out any we use "<!-- This is coment -->" <br>
 ---
 
 ## Day 2
-<h2>HTMl Attributes</h2>
+<h2>HTML Attributes</h2>
 Attributes are used to add more information to tag.
 
 1. Heading Tag- used to display heading in HTML. There are 6 heading i.e; h1,h2,h3,h4,h5,h6.Heading Tags are used to show the important of that content h1 is most important and h6 is lest important.
@@ -35,11 +35,13 @@ Italic(i)- used to italic the text eg: <i>Italic Text</i> <br>
 Underline(u)- used to underline the text eg: <u>underline</u><br>
 Big(big)- used to big font size text eg:<big>Text</big><br>
 Small(small)- used to big font size text eg:<small>Text</small><br>
-Horizontal Ruler(hr)- used to separate the content by underline the complete line/ block.<hr>
+Horizontal Ruler(hr)- used  to separate the content by underline the complete line/ block.<hr>
 Subscript and Superscript Tag- used to formula (sub means at bottom and sup means at power) like:
 <p> Chemical Formula of Water : H<sub>2</sub>O </p>
-<p> Algebric equation: (x+y)<sup>2</sub>= x<sup>2</sup> + 2xy + y<sup>2</sup> </p>
+<p> Algebric equation: (x+y)<sup>2</sup>= x<sup>2</sup> + 2xy + y<sup>2</sup> </p>
 Pre Tage- used to consider space which was own given.<br>
 
 <b>Task 2- </b> Create homepage with additionaly Three page(Education, Experience and Project page) and link these page internal with homepage. Design these pages with upper describe Tags.
 
+---
+## Day 4
