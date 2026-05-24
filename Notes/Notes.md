@@ -25,6 +25,7 @@ Relative link- When any HTML, Image or any other file placed in folder or same d
 Img Tag used "src" attribute to add image. Link may be relative or Absoult.<Br>
 Img tag also used "alt" attribute to define there name, it shown in webpage if Image is not Found.<br>Img Tag use many attribute like height,width for adjusting Image size. Best option to use only one of these attribute (either height:mostly use or width).
 4. br tag used to break the line.
+5. In anchor tag target is an attribute which used to open the link in other tab. target="_main".
 
 ---
 ## Day 3
@@ -45,3 +46,33 @@ Pre Tage- used to consider space which was own given.<br>
 
 ---
 ## Day 4
+<h2>Page layout Techniques</h2>
+
+- Semantic Tag- The tag which define html element by own name like header, main, footer.
+- Non-Semantic tag- The tag which not clearly define the html element like- span, div etc.
+<p>Good habit to used semantic tag because it is also improve SEO, user readable.*use Right tag at right place*</p>
+<ul>
+    <li>Header : it define header of webpage , In this navbar is define<li>
+    <li>Main: This is the main content of web page, where all the content are written. Ther are other tag which is written inside the main tage are:-
+        <ol type='a'>
+            <li>Section : it Define Section for your page.</li>
+            <li>article : For an article on yor page.</li>
+            <li>aside : For content aside main content(ads)</li>
+        </ol>
+    </li>
+    <li>Footer : It tells about footer contet.</li>
+</ul>
+<p>Div tag : div is a container used for other html elements. It is block element(takes full width).<br> Div is non-semantic tag.</p>
+
+- Span tag : It is also a containner used for other HTML elements . It is inline element(takes width ass per size required only).
+
+- <b>Task 3-</b> Add an Image in Homepage and useful link . Also improve the layout using semantic and non sementic tag.
+
+---
+## Day 5
+<h2>List in HTML</h2>
+
+1. Unodered list (ul): list data in bullet form.
+2. Ordered list (ol): list data in Numeric or alphabetic formate.
+- All these list are design by using li tag under these two ie; ol and ul
+- type attribute is used to change design from circle to sqaure, number to alphabetic.
