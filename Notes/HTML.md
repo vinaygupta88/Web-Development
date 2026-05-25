@@ -76,3 +76,33 @@ Pre Tage- used to consider space which was own given.<br>
 2. Ordered list (ol): list data in Numeric or alphabetic formate.
 - All these list are design by using li tag under these two ie; ol and ul
 - type attribute is used to change design from circle to sqaure, number to alphabetic.
+
+## Day 6
+
+<h2>Table</h2>
+<p>Table are used to represent real life table dat.</p>
+
+- tr : used to display table row
+- td : used to display table data
+- th : used to display table header
+- caption : is used to describe the table eg: Table 1: Student data
+- thead : to wrap table head
+- tbody : to wrap table body
+- In table there is two more attribute called rowspan and colspan . these two decribe how much space are cover by them , rowspan- cover rows and colspan- cover column.
+
+## Day 7
+
+<h2>Form</h2>
+<p>Form are used to collect data from the user </p>
+
+- action : Action attribute is used to define what action needs to be performed when a form is submitted. (form action='/action.php')
+<ul> Form Element:
+    <li>input : used to take input, it may be text,password,number,radio, checkbox type</li>
+    <li>label : it is type of tag assign to input</li>
+    <li>textarea : used to collect feedback from user.  In this we give row=4 or col=3</li>
+    <li>select : used to select one option from multiple option from dropdown. this element include option tag also.</li>
+    <li>submit : it is type of button used to submit the form</li>
+</ul>
+
+- iframe tag : website inside website (iframe src="link")
+- video tag : add video in webpage (video src="link"). For video tage the is an attribute - controls, height,width,loop and autoplay.
