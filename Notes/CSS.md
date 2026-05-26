@@ -146,3 +146,87 @@ This is the CSS property, used to set an image as background. eg:-background-ima
     < p>lorem*5</ p>
     < div>Love Nature</ div>
     < p>lorem*5</ p>
+    
+---
+## Day 7
+<h2>FlexBox</h2>
+It is a one-dimenstional layout method for arranging items in rows or columns.
+
+1. Flexbox Direction: It sets how flex item are placed in the flex container, along which axis and direction. eg:- **flex-direction:row/row-reverse/column/column-reverse;**
+2. Flex Properties:-
+    a. justify-content: alignment along the main axis. eg:- flex-start/flex-end/centre/space-evenly/space-around/space-between
+    b. flex-warp: nowrap/wrap/wrap-reverse
+    c. align-items: alignment along the cross axis.
+    d. align-content: alignment of space between & around the content along cross -axis
+    e. align-self: alignment of individual along the cross axis.
+    f. flex-grow: how much a flex item will grow relative to the rest of the flex item if space is available.
+    g. flex-shrink: how much a flexitem will shrink relative to the rest of the space is availabe.
+
+<b>Task 6- </b>Create a navbar with 4 options in the form of anchor tags inside list items.Now, use flexbox to place them all spaced equaly in a single line.
+        Use flexbox to center one div inside another div.
+        Which has higher priority-align-items or align-self
+
+<h2>Meadia Queeries</h2>
+Help create a responsive website
+
+```
+@media(width/ min-width/ max-width:600px){
+    div{
+        background-color:red
+    }
+}
+
+@media(min-width:500px and max-width:800px){
+    div{
+        font-size:12px;
+    }
+}
+```
+## Day 8
+<h2>Transitions</h2> 
+Transitions enable you todefine the transition between two states of an element.
+
+- tansition-property: property you want to transition(font-size,width, etc)
+- transition-duration:2s/4ms .....
+- transition-timing-function: ease-in/ease-out/linear/steps....
+- transition-delay: 2s/4ms ....
+* Transition hai mainly two use property - hover and active 
+ **transition: property name | duration | timing-function |delay**
+
+<h2>Css transform</h2>
+Used to apply 2D & 3D transformations to an element
+
+1. rotate- transform:rotate(45deg);
+
+```
+                ^
+                |   /           rotateX:45deg;    
+                |  /            rotateY:45deg;
+                | /) 45         rotateZ:45deg;
+    <----------------------->
+                |
+                |
+                |
+                v
+    * transition : translate(100); - used to move element it could be in x, y or (x,y)
+    * transition: skew() used to sretch and item diagonaly
+```
+
+<h2>Animation</h2>
+To animate CSS element. It define by using @keyframes. It work only when we use animation property.
+
+```
+@keyframe myName{
+    from{font-size:20px;}
+    to{font-size:40px}
+}
+>> property:
+    animation-name, animation-duration, animation-timing-function, animation-delay, animation-iteration-count, animation-direction
+    ** shorthand--- animation: name duration timing-function delay iteration-count direction;
+```
+<b>Task 7- </b>Create a simple loader using CSS with following step:
+
+- Create a div with circular shape & a thik border from one end(top/bottom/left/right)
+- To make it spin create an animation which transform it from 0 deg to 360 deg.
+- Add the animation property to thh loader with infinite duration.
+---
