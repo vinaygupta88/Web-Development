@@ -54,3 +54,95 @@ All the text by default left align.
 <b>Task 2-</b> a. Create a heading on the page with all of its text Capitalized by default.
             b. Set the font family of all the content in the document to "Times New Roman".
             c. Create one div inside the another div. Set id and text "outer" for the first one & "inner" for the second one. Set the outer div text size to 25px & inner div text size to 10px.
+--- 
+## Day 4
+
+<h2>Box Model</h2>
+
+```
+        ----------------------------------------
+        |             Margin                    |
+        |   ---------------------------------   |
+        |   |          Border               |   |
+        |   |   ------------------------    |   |
+        |   |   |      Padding          |   |   |
+        |   |   |     --------------    |   |   |
+        |   |   |     |  Content   |    |   |   |
+        |   |   |     |            |    |   |   |
+        |   |   |     --------------    |   |   |
+        |   |   -------------------------   |   |
+        |   |                               |   |
+        |   ---------------------------------   |
+        |                                       |
+        -----------------------------------------
+```
+1. Height: By default, it sets the content area height of element.
+2. Width:  By default, it sets the content area width of element.
+3. Border: used to set an element's border. it user three property.
+    a. border-width: 2px;
+    b. border-style:solid/dotted/dashed;
+    c. border-color:black;
+    ** all three property are merge in single called "shorthand" eg:- border:2px solid black;
+    ** border-radius: used to make border in round shape. For circular it must be 50% meanse it design circle(height=width). eg:- border-radius: 50%
+4. Padding: It add addition space around content. it has four property-
+    a. padding-top:10px
+    b. padding-right: 10px
+    c. padding-bottom: 10px
+    d. padding-left: 10px
+    ** shorthand - padding:10px means from all four side, / padding: 10px 0px 5px 10px;
+5. Margin: It add addition space around content. it has four property-
+    a. margin-top:10px
+    b. margin-right: 10px
+    c. margin-bottom: 10px
+    d. margin-left: 10px
+    ** shorthand - margin:10px means from all four side, / margin: 10px 0px 5px 10px;(top right bottom left)
+<b>Task 3- </b> a. Create a div with heaight & widthof 100 px, Set its background color to green & the border radius to 50%.
+    b. Create the following navbar
+
+    ```  
+    amazon.in           Account         My Cart         Contact Us          Search Box    
+    ```
+---
+## Day 5
+<h2>Display Property</h2>
+
+- display: inline/block/inliine-block/none
+1. inline- Takes only the space required by the element (no margin/padding).
+2. block- Takes full space available in width.
+3. inline-block- Similar to inline but we can set margin & padding.
+4. none- To remove element from document flow.
+
+<h2>Alph channel </h2>
+<p>ppacity : eg:- rgba(25,0,0,10,)</p>
+
+<b>Task 4- </b>a. Create a webpage layout with a header. a footer & a content area containg 3 divs. Set the height & width of divs to 100px.(add the previous navbar in the header)
+    b. Add Borders to all the divs.
+    c. Add a different background color to each div with an opacity of 0.5
+    d. Give the content area an appropriate height.
+
+---
+## Day 6
+<h2>Position Property</h2>
+The position CSS property sets **how an elemnt is positioned **in a document.
+eg:- position:static/relative/absolute/fixed.
+
+1. static- Default position(Top,right,bottom,left and z-index properties have no effect).
+2. relative- element is relative to itself.(Top, right, bottom, nd z-index will work).
+3. absolute- positioned relative to its closest positioned ancestor (removed from flow).
+4. fixed- positioned relative to browser (removed from flow).
+5. sticky- positiooned based on user's scroll position.
+6. z-index- it decides the stack level of elements. Overlapping elements with a larger z-index cover those with a smaller one. eg:- z-index: auto/ 1/2/3/.../-1/-2/-3...... 
+
+<h2>Background Image</h2>
+This is the CSS property, used to set an image as background. eg:-background-image:url("image path");
+
+- To set the background image so that image can't stuck we have to add extra property called background-size:cover/contain/auto;
+1. cover- it cover complete space , no empty space left
+2. contain- it fit the image in container but if space is available the image is repeat.
+
+<b>Task 5- </b>Create the following layout using the given html.
+    . Give the div a height, width & some background image.
+    . Use the appropriate position prperty for the div element to place it at the right end of the page.(The div should not move even on sroll)
+    < p>lorem*5</ p>
+    < div>Love Nature</ div>
+    < p>lorem*5</ p>

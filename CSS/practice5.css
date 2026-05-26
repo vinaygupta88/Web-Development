@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+p{
+    font-size: 18;
+}
+
+div{
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    font-weight: bold;
+    background-image: url(/Image/nature.jpg);
+    background-size: cover;
+    position: fixed;
+    right: 0px;
+    top: 50px;
+}
