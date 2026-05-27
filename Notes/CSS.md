@@ -230,3 +230,12 @@ To animate CSS element. It define by using @keyframes. It work only when we use 
 - To make it spin create an animation which transform it from 0 deg to 360 deg.
 - Add the animation property to thh loader with infinite duration.
 ---
+
+# Project
+<h1>Amazon Webpage clone</h1>
+
+- This is the clone of Amazon website, where only frontend part is design using **html and Css**.<br>
+To build this project(Amazon website clone) i used some external website for help like-
+
+1. Icon- https://fontawesome.com/
+2. Font- https://cdnjs.com/ (it used for both font and icon)
