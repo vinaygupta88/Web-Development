@@ -86,3 +86,36 @@ JavaScript conditional statements are used to make decisions in a program based 
 </table>
 <b>Task 1- </b>Get user to input a number using prompt("Enter a number:"). Check if the number is a multiple of 5 or not.
 ---
+
+## Day 3
+
+<h2>Loops</h2>
+Loops are used to execute a block of code repeatedly until a condition is met or all items in a sequence are processed.<br>
+
+1. **For :** The for loop repeats a block of code a specific number of times. It contains initialization, condition, and increment/decrement in one line.
+   _for (initialization; condition; increment/decrement) { // Code to execute}_ <img src="https://media.geeksforgeeks.org/wp-content/uploads/20250925165125538280/Forloop.webp" height= 150px alt="For loop synatx">
+2. **while :** The while loop executes as long as the condition is true. It can be thought of as a repeating if statement.<br>
+   _while (condition) { // Code to execute }_ <br> <img src="https://media.geeksforgeeks.org/wp-content/uploads/20250925165721953487/While-loop.webp" height= 150px alt="while loop">
+3. **do-while :** The do-while loop is similar to while loop except it executes the code block at least once before checking the condition.<br>_do {// Code to execute} while (condition);_<br>
+   <img src="https://media.geeksforgeeks.org/wp-content/uploads/20250925165838840320/Do-while-loop.webp" height=150px alt="do-while loop">
+
+<h2>String</h2>
+String is a sequence of characters used to represent text.
+
+1. Create String: _let str = "sanga;_
+2. String length: _str.length;_
+3. String Indices: _str[0],str[1]....._
+4. Template Literals: A way to have embedded expressions in strings. eg:-_this is atemplate literal_
+5. String Iterpolation : To create strings by doing substitution of placehoders. eg:- _string text ${expression} string text_
+6. Escape Characters: it used to change line. eg:- _\n_, _\t_
+7. String Methods : These are built in functions to manipulate a string.**It can't change original string, it return copy of string**
+   a. str.toUpperCase(): used to convert string text in capital letter.
+   b. str.toLowerCase():
+   c. str.trim(): Used to remove whitespaces from starting and from ending of string.
+   d. str.slice(start,end): retirn part of string.
+   e. str1.concat(str2): join str 2 with str1.
+   f. str.replace(searchVal, newVal): replace old variable from new one.
+   g. str.charAt(idx): to find out which character is at that index.
+   <b>Task 2: </b>Prompt the user to enter thair full name , Generate ausername for them based on the input. Start username with @, followed by their full name and ending with the fullname length.
+
+---
