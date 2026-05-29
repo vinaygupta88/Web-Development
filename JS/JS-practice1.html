@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS practice 1</title>
+</head>
+
+<body>
+    <h1>Task 1</h1>
+    <p><b>Question: </b>Get user to input a number using prompt("Enter a number:"). Check if the number is a multiple of
+        5 or not. [This is shown on pop and console]</p> <br />
+    <p>Result: <span id="output" style="color: rgb(17, 99, 171); font-weight: 700;"></span> </p> <br><br>
+
+    <p><b>Question: </b>Get user to input a number using prompt("Enter a number:"). Check if the number is a multiple of
+        5 or not. [This is shown on pop and console]</p> <br />
+    <p>Result: <span id="result" style="color: rgb(17, 99, 171); font-weight: 700;"></span> </p>
+
+
+    <script>
+        // 10 seconds baad first prompt
+        setTimeout(function () {
+            // Multiple of 5 check
+            let num = prompt("Enter a Number:");
+            let output = num % 5;
+            let message;
+            if (output == 0) {
+                message = num + " is multiple of 5";
+            } else {
+                message = num + " is NOT multiple of 5";
+            }
+            document.getElementById("output").innerHTML = message;
+        }, 5000);
+
+        setTimeout(function () {
+        let number = prompt("Enter your Score:");
+        let display;
+        if (number >= 80 && number <= 100) {
+            display = "Grade: A";
+        } else if (number >= 70 && number <= 79) {
+            display = "Grade: B";
+        } else if (number >= 60 && number <= 69) {
+            display = "Grade: C";
+        } else if (number >= 50 && number <= 59) {
+            display = "Grade: D";
+        } else {
+            display = "Grade: F";
+        }
+        document.getElementById("result").innerHTML = display;
+        }, 20000);
+    </script>
+</body>
+
+</html>
