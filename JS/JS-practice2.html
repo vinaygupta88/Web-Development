@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS practice 2</title>
+</head>
+
+<body>
+    <h1>Task 2</h1>
+    <p><b>Question: </b>Prompt the user to enter thair full name , Generate a username for them based on the input. Start username with @, followed by their full name and ending with the fullname length.</p> <br />
+    <p>Result: <span id="output" style="color: rgb(17, 99, 171); font-weight: 700;"></span> </p> <br><br>
+
+    <script>
+        setTimeout(function () {
+            let fullName = prompt("Enter your Full Name without space:");
+            let username = "@" + fullName + fullName.length;
+            document.getElementById("output").innerHTML = username;
+        }, 10000);
+    </script>
+</body>
+
+</html>
