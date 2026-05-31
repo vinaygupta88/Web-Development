@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS practice 3</title>
+</head>
+
+<body>
+    <h1>Task 3 </h1>
+    <p><b>Question: </b>For a given array with marks of students [85,97,44,37,76,60]. Find the Average marks of the entire class.</p> <br />
+    <p>Result: <span id="output" style="color: rgb(17, 99, 171); font-weight: 700;"></span> </p> <br><br>
+    <p><b>Question: </b>For a given array with prices of 5 items [250, 645, 300, 900, 50], All items have an offer of 10% OFF on them. Change the array to store final price after applying offer.</p> <br />
+    <p>Result: <span id="display" style="color: rgb(17, 99, 171); font-weight: 700;"></span> </p> <br><br>
+
+    <script>
+        setTimeout(function () {
+            let marks = [85,97,44,37,76,60];
+            let sum = 0;
+            for (let i=0; i<marks.length; i++){
+                sum += marks[i];
+            }
+            let avg = sum / marks.length;
+            let Result = avg;
+            document.getElementById("output").innerHTML = Result;
+        }, 2000);
+
+        // second question 
+        setTimeout(function(){
+            let items = [250, 645, 300, 900, 50];
+            for(let i=0; i<items.length; i++){
+                let offer = items[i]/10;
+                items[i] -= offer ;
+            }
+            let result = items;
+            document.getElementById("display").innerHTML=result;
+        },5000);
+    </script>
+</body>
+
+</html>

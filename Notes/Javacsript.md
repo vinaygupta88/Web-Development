@@ -120,3 +120,58 @@ String is a sequence of characters used to represent text.
    <b>Task 2: </b>Prompt the user to enter thair full name , Generate ausername for them based on the input. Start username with @, followed by their full name and ending with the fullname length.
 
 ---
+
+## Day 4
+
+<h2>Array</h2>
+Collection of items
+<h4>Creation of array</h4>
+
+1. Create Array using Literal: _let a = [];_<br>_let b = [10, 20, 30];_
+2. Create using new Keyword (Constructor): _let a = new Array(10, 20, 30);_
+<h4>Operation of array</h4>
+
+```
+1. Accessing Elements of an Array:
+    let a = ["HTML", "CSS", "JS"];
+    let fst = a[0];               // Accessing First Array Elements
+    let lst = a[a.length - 1];  // Accessing Last Array Elements
+2. Modifying the Array Elements
+    a[1]= "Bootstrap";
+3. Adding Elements to the Array
+    let a = ["HTML", "CSS", "JS"];
+    a.push("Node.js");              // Add Element to the end of Array
+    a.unshift("Web Development");   // Add Element to the beginning
+4. Removing Elements from an Array
+    let lst = a.pop();              // Removes and returns the last element
+    let fst = a.shift();            // Removes and returns the first element
+    a.splice(1, 2);                 // Removes 2 elements starting from index 1
+    splice(start, delcount, newElement);    //  change original array(add, remove,replace)
+5. Array Length
+    let len = a.length;
+6. Increase and Decrease the Array Length
+    a.length = 7;                   // Increase the array length to 7
+    a.length = 2;                   // Decrease the array length to 2
+7. Iterating Through Array Elements (looping)
+    let a = ["HTML", "CSS", "JS"];  // Creating an Array and Initializing with Values
+
+    // Iterating through for loop
+    for (let i = 0; i < a.length; i++) {
+        console.log(a[i])
+    }
+8. Array Concatenation
+    let a = ["HTML", "CSS", "JS", "React"];
+    let b = ["Node.js", "Express.js"];
+    let concateArray = a.concat(b);         // Concatenate both arrays
+9. Conversion of an Array to String
+    a.toString()                            // Convert array ot String
+10. Check the Type of an Arrays
+    typeof a                                // Check type of
+
+I javascript Array is mutable but string is immutable.
+```
+
+<b>Task 3: </b>a. For a given array with marks of students [85,97,44,37,76,60]. Find the Average marks os the entire class. <br>
+b. For a given array with prices of 5 items [250, 645, 300, 900, 50], All items have an offer of 10% OFF on them. Change the array to store final price after applying offer.
+
+---
