@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS practice 4</title>
+</head>
+
+<body>
+    <h1>Task 4 </h1>
+    <p><b>Question: </b>Create a function using the "function" keyword that takes a String as an argument & returns the
+        number of vowels in the String.</p> <br />
+    <p>Result: <span id="output" style="color: rgb(17, 99, 171); font-weight: 700;"></span> </p> <br><br>
+    <p><b>Question: </b>For a given array of number, print the square of each value using the "forEach" loop/method. Ex-
+        [1,2,3,4,5,6,7,8,9,10]</p> <br />
+    <p>Result: <span id="display" style="color: rgb(17, 99, 171); font-weight: 700;"></span> </p> <br><br>
+    <p><b>Question: </b>Take a number n as input from user. Create an array of numbers from 1 to n. <br>Use the reduce
+        method to calculate sum of all numbers in the <array class="br"></array>
+        Use the reduce method to calculate product of all numbers in the array.</p> <br />
+    <p>Result: <span id="sum" style="color: rgb(17, 99, 171); font-weight: 700;"></span> </p> <br><br>
+    <p>Result: <span id="product" style="color: rgb(17, 99, 171); font-weight: 700;"></span> </p> <br><br>
+
+    <script>
+        setTimeout(function () {
+            function countVowels(str) {
+                let count = 0;
+                for (const char of str) {
+                    if (char === "a" || char === "e" || char === "i" || char === "o" || char === "u") {
+                        count++;
+                    }
+                }
+                return count;
+            }
+            let string = prompt("Enter your String: ");
+            let res = countVowels(string);
+            document.getElementById("output").innerHTML = res;
+        }, 2000);
+
+        setTimeout(function () {
+            let nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+            let res = [];
+            nums.forEach((num) => {
+                res.push(num ** 2);
+            });
+            document.getElementById("display").innerHTML = res;
+        }, 5000);
+
+        setTimeout(function () {
+            let num = Number(prompt("Enter the number of elements:"));
+            let arr = [];
+            // array create
+            for (let i = 1; i <= num; i++) {
+                arr.push(i);
+            }
+            // sum calculate
+            let sum = arr.reduce((res, curr) => {
+                return res + curr;
+            }, 0);
+            // product calculate
+            let product = arr.reduce((res, curr) => {
+                return res * curr;
+            }, 1);
+            // display
+            document.getElementById("sum").innerHTML = sum;
+            document.getElementById("product").innerHTML = product;
+        }, 7000);
+    </script>
+</body>
+
+</html>
