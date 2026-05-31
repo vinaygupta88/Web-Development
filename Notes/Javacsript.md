@@ -85,6 +85,7 @@ JavaScript conditional statements are used to make decisions in a program based 
     </tr>
 </table>
 <b>Task 1- </b>Get user to input a number using prompt("Enter a number:"). Check if the number is a multiple of 5 or not.
+
 ---
 
 ## Day 3
