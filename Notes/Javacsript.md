@@ -175,3 +175,57 @@ I javascript Array is mutable but string is immutable.
 b. For a given array with prices of 5 items [250, 645, 300, 900, 50], All items have an offer of 10% OFF on them. Change the array to store final price after applying offer.
 
 ---
+
+## Day 5
+
+<h2>Functions</h2>
+Function is the block of code that performs a specific task, can be invoked whenever needed.<br>
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20250913154912457767/use_of_function_in_javascript_12.webp" height=150px, width=50% ><img src="https://media.geeksforgeeks.org/wp-content/uploads/20250913153204369940/function1.webp" height=150px, width=50%>
+
+- Function Defination
+  function FunctionName(){// content}
+  function functionName(paramerter1, parameter2.....){// content}
+  function parameter are local variable and block scope.
+- Function Call
+  FunctionName();
+- Arrow Functions
+  Compact way of writing a function
+  const functionName = (param1,param2...) =>{//function content}
+  
+- **Higher Order Function**: Higher function are those function whose take other function as parameter or return other functions. eg:- forEach()
+- map(): Create a new array with the results of some operation. The value its callback return are used to form new array.
+
+```
+arr.map(callbackFnx(value,index,array))
+
+example: let newArray = arr.map((val)=>{
+    return val*2;
+})
+```
+
+- Filter: Create a new array of element that give true for a condition/filter.
+
+```
+let arr = [2,4,5,6,7,8,9,2];
+let newArray = arr.filter((val)=>{
+    return val % 2 === 0;
+})
+```
+
+- Reduce: Perform some operation & reduce the array to a single value. It return that single value
+
+```
+const a = [2, 4, 6];
+
+function sum2(acc, x) {
+  return acc + x;
+}
+
+const sum = a.reduce(sum2, 0);
+
+console.log(sum);
+```
+<b>Task 4:</b> a. Create a function using the "function" keyword that takes a String as an argument & returns the number of vowels in the String.<br>
+  b. For a given array of number, print the square of each value using the "forEach" loop/method.
+  c. Take a number n as input from user. Create an array of numbers from 1 to n. Use the reduce method to calculate sum of all numbers in the array.
+    Use the reduce method to calculate product of all numbers in the array. 
