@@ -229,3 +229,64 @@ console.log(sum);
   b. For a given array of number, print the square of each value using the "forEach" loop/method.
   c. Take a number n as input from user. Create an array of numbers from 1 to n. Use the reduce method to calculate sum of all numbers in the array.
     Use the reduce method to calculate product of all numbers in the array. 
+
+---
+## Day 6
+<h2>Document Object Model (DOM) </h2>
+The DOM (Document Object Model) is a structured representation of a web page that allows developers to access, modify, and control its content and structure using JavaScript. It powers most dynamic website interactions, enabling features like real-time updates, form validation, and interactive user interfaces.<br>
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20260204153533139058/html_page_structure.webp" height=250px width=50%><img src="https://media.geeksforgeeks.org/wp-content/uploads/20260204153533335673/a_normal_distribution_3.webp" height=250px width=50%>
+
+<h2>Window Object</h2>
+The window object represents an open window in a browser. It is browser's object(not JavaScripts) and is automatically created by browser.<br>
+It is a global object with lots of properties and methods.
+<h3>DOM Manipulation</h3>
+
+1. Selecting with id: **document.getElementById("myId")**
+2. Selecting with class: **document.getElementByClassName("myClass")**
+3. Selecting with tag: **document.getElementByTagName("p")**
+4. Query Selector: **document.querySelector("myId/myClass/tag")**
+        **document.querySelectorAll("myId/myClass/tag")**
+<h4>Properties:</h4>
+
+- tagName: returns tag for element nodes.
+- innerText: returns the text content of the element and all its children
+- innerHTML: returns the plain text or HTML content in element
+- textContent: returns textual content even for hidden elements
+<h4>Attributes</h4>
+
+1. **getAttribute(attr)**           To get the attribute value.
+    **setAttribute(att,value)**     To set the attribute val th
+2. **node.style**                   To style
+<h4>Insert Elements</h4>
+
+- node.append(el)       //adds at the end of node(inside)
+- node.prepend(el)      // adds at the start of node(inside)
+- node.before(el)       // adds before the node(outside)
+- node.after(el)        // adds after the node(outside)
+<h4>Delete Element</h4>
+
+- node.remove()         // remove the node
+<b>Task 5: </b>Create a new button element, Give it a text "click me", background color of red & text color of white. Insert the button as the first element inside the body tag.
+
+---
+## Day 6
+<h2>Events in JS</h2>
+The changes in the state of an object is known as Event.<br>
+Events are fired to notify code of "Interesting Changes" that may affect code execution. Example: 
+    a. Mouse events(click, double click etc.)
+    b. Keyboard events(keypress, keyup, keydown)
+    c. Form Events(submit, etc)
+    d. Print events and many more.
+<h3>Event Object</h3>
+It is special object that has details about the event. All event handlers have access to Event Object's properties and methods. eg: **node.event=(e)=>{ // handle here}**
+<h4>Event Listeners</h4>
+
+```
+node.addEventListener(event,callback)
+node.removeEventListener(event,callback)
+
+** the callback reference should be same to remove
+```
+<b>Task 6: </b>Create a toggle button that changes the screen to dark-mode when clicked & light-mode when clicked again.
+
+---
