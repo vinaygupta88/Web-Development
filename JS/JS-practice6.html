@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS practice 6</title>
+</head>
+
+<body>
+    <h1>Task 6 </h1>
+    <p><b>Question: </b>Create a toggle button that changes the screen to dark-mode when clicked & light-mode when
+        clicked again.</p> <br />
+    <button id="mode"> Change Mode</button>
+
+    <script>
+        let modeBtn = document.querySelector("#mode");
+        let currmode = "light";
+
+        modeBtn.addEventListener("click", () => {
+            if (currmode === "light") {
+                currmode = "dark";
+                document.querySelector("body").style.backgroundColor = "aqua";
+            } else {
+                currmode = "light";
+                document.querySelector("body").style.backgroundColor = "white";
+            }
+        });
+    </script>
+
+</body>
+
+</html>
