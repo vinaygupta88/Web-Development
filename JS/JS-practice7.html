@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice Set 7</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            color: white;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 850px;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #38bdf8;
+        }
+
+        .question-box {
+            background: rgba(255, 255, 255, 0.06);
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 20px;
+            display: none;
+            animation: fade 1s ease;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .form-group {
+            margin-top: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 12px;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            font-size: 15px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 10px;
+            background: #38bdf8;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #0ea5e9;
+            transform: scale(1.05);
+        }
+
+        .output {
+            margin-top: 20px;
+            background: rgba(255, 255, 255, 0.08);
+            padding: 20px;
+            border-radius: 15px;
+            line-height: 1.8;
+        }
+
+        .title {
+            color: #facc15;
+            margin-bottom: 10px;
+        }
+
+        .success {
+            color: #4ade80;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>JavaScript Practice Set 7</h1>
+
+        <!-- Question A -->
+        <div class="question-box" id="questionA">
+
+            <h2 class="title">Question A</h2>
+
+            <p>
+                Create a class <b>User</b> with properties name and email.
+                User can view website data.
+            </p>
+
+            <div class="form-group">
+                <label>Select User Type</label>
+                <select id="role">
+                    <option value="Student">Student</option>
+                    <option value="Teacher">Teacher</option>
+                    <option value="Admin">Admin</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Enter Name</label>
+                <input type="text" id="name" placeholder="Enter your name">
+            </div>
+
+            <div class="form-group">
+                <label>Enter Email</label>
+                <input type="email" id="email" placeholder="Enter your email">
+            </div>
+
+            <button onclick="createUser()">Create User</button>
+
+            <div class="output" id="output"></div>
+
+        </div>
+
+        <!-- Question B -->
+        <div class="question-box" id="questionB">
+
+            <h2 class="title">Question B</h2>
+
+            <p>
+                Admin can edit website data using inheritance.
+            </p>
+
+            <button onclick="adminEditData()">Admin Edit Website Data</button>
+
+            <div class="output" id="adminOutput"></div>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        // Website Data
+        let DATA = "Welcome to our College Website. This website is made for JavaScript Practice Set 7.";
+
+        // User Class
+        class User {
+
+            constructor(name, email, role) {
+                this.name = name;
+                this.email = email;
+                this.role = role;
+            }
+
+            viewData() {
+
+                return `
+                    <span class="success">User Created Successfully ✅</span><br><br>
+
+                    <b>Role:</b> ${this.role} <br>
+                    <b>Name:</b> ${this.name} <br>
+                    <b>Email:</b> ${this.email} <br><br>
+
+                    <b>Website Data:</b><br>
+                    ${DATA}
+                `;
+            }
+        }
+
+        // Admin Class Inheritance
+        class Admin extends User {
+
+            constructor(name, email, role) {
+                super(name, email, role);
+            }
+
+            editData() {
+
+                DATA = "Website data updated by Admin 🎉 <br> New Notice: JavaScript practical submission is tomorrow.";
+
+                return DATA;
+            }
+        }
+
+        // Create User Function
+        function createUser() {
+
+            let role = document.getElementById("role").value;
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+
+            if (name === "" || email === "") {
+                alert("Please fill all details");
+                return;
+            }
+
+            let user;
+
+            if (role === "Admin") {
+                user = new Admin(name, email, role);
+            } else {
+                user = new User(name, email, role);
+            }
+
+            document.getElementById("output").innerHTML = user.viewData();
+        }
+
+        // Admin Edit Function
+        function adminEditData() {
+
+            let admin = new Admin("Admin", "admin@gmail.com", "Admin");
+
+            document.getElementById("adminOutput").innerHTML =
+                `
+                <span class="success">Admin Edited Website Data ✅</span><br><br>
+                ${admin.editData()}
+            `;
+        }
+
+        // Show Question A after 1 second
+        setTimeout(() => {
+            document.getElementById("questionA").style.display = "block";
+        }, 1000);
+
+        // Show Question B after 6 seconds
+        setTimeout(() => {
+            document.getElementById("questionB").style.display = "block";
+        }, 3000);
+
+    </script>
+
+</body>
+
+</html>
