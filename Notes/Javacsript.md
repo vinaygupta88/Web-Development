@@ -290,3 +290,60 @@ node.removeEventListener(event,callback)
 <b>Task 6: </b>Create a toggle button that changes the screen to dark-mode when clicked & light-mode when clicked again.
 
 ---
+## Day 7
+<h2>Classes and objects</h2>
+<h4>Prototypes in JS</h4>
+A javaScript object us an entity having state and behaviour(properties and method).<br>
+JS objects have a special property called prototype.
+We can set prototype using  __proto__ <br>
+If object & prototype have same method, object's method will be used.
+
+<h4>Classes in JS</h4>
+Class is a program-code template for creating objects. THose object will have some state (variable) & some behaviour (functions) inside it.
+
+```
+Constructor() method is : automatically invoked by new and initialize object.
+class MyClass{
+    constructor(){...........}
+    myMethod(){..............}    
+}
+
+let myObje = new MyClass();
+```
+<h4>Inheritance</h4>
+Inheritance is passing down properties & methods from parent class to child class.
+
+```
+class Parent{
+
+}
+class Child extends parent{
+
+}
+
+** If Child & parent have same method, child's method will be used(method overriding)
+```
+<h4>super Keyword</h4>
+The super keyword is used to call the constructor of its parent class to access the parent's properties and methods.
+
+```
+super(args)
+super.parentMethod(args)
+```
+<b>Task 7 : </b>a. You are creating website for your college. Create a class "User" with 2 properties- name & email. It also has a method call "viewData()" that allow user to view website data.
+        b. Create a new class called "Admin" which inherits from "User". Add a new method called editData to Admin that allows it to edit website data.
+
+<h4>Error Handling</h4>
+JavaScript error and exception handling helps developers control what happens when something goes wrong during program execution.   
+
+```
+try-catch blocks
+
+            try{
+                .....normal code
+            }catch(err){
+                // err is error object
+                ...........handling error
+            }
+```
+---
