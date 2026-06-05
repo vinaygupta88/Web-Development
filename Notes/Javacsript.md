@@ -347,3 +347,35 @@ try-catch blocks
             }
 ```
 ---
+# Day 8
+<h2>Sync in JS</h2>
+
+1. **Synchronous :** It means the code runs in particular sequence of instructions given in the program. Each instruction waits for the previous instructions to complete its execution.
+2. **Asynchronous :** Due to synchronous programming , sometimes imp instructions get blocked due to some previous instructions, which causes a delay in the UI.<br>
+Asynchronous code execution allows to execute next instructions immediately and doesn't block the flow. eg: *setTimeout*
+- **Callbacks :** A callback is a function passed as an argument to another function.<br>
+
+- **Callback Hell :** Nested callbacks stacked below one another forming a pyramid structure(pyramid of Doom). This style of programming became difficult to understand & manage.
+
+- **Promise :** It is for "eventual" Completion of task. It is an object in JS. It is a solution to callback hell.
+
+```
+let promise = new Promise((resolve, reject)=>{...........})
+                                    |____________________|
+                                                |
+                                                v
+                                        Funtion with 2 handlers
+
+A javaScript promise object can be:
+    * Pending: The result is undefined
+    * Resolved : The result is a value (fulfilled)      resolve(result)
+    * Rjected : The result is an error object           reject(error)
+    
+    Promise has state (pending,fulfilled) & some result(result for resolve & error for reject).
+    
+    promise.then((res)=>{.....})
+    promis.catch((err)=>{.....})
+```
+- **Async-Await :** async function returns a promise. where as await pauses the execution of its surrounding async function until the promise is settled.<br>
+*async function myFunc(){.............}*
+---
