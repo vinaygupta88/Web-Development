@@ -379,3 +379,16 @@ A javaScript promise object can be:
 - **Async-Await :** async function returns a promise. where as await pauses the execution of its surrounding async function until the promise is settled.<br>
 *async function myFunc(){.............}*
 ---
+## Day 9
+<h2>API's</h2>
+API stand for "Application Programming Interface"
+
+- The Fetch API provides an interface for fetching (sending/receving) resources.
+It uses Request and Response objects. The fetch() method is used to fetch a resource(data).<br>
+*let promise = fetch(url,[options])*
+- AJAX is Asynchonous JS and XML
+- JSON is JavvaScript Object Notation <br><br>
+- json() method : return a second promis that resolves with the result of parsing the response body text as JSON. (Input is JSON, Output is JS object)
+<p><b>Request & respons</b> HTTP Stands for HyperText Transfer Protocol. Http response header also contain details about the response, such as content type, HTTP status code etc. there are some Verb like GET, POST, PUT, DELETE etc</p>
+
+<b>Project: </b>Crete a currency converter using API.
